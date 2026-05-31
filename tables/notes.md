@@ -1,0 +1,1 @@
+Создайте HTML-таблицу с заголовком и следующими элементами:1. с текстом "Employee Directory".Тег <caption>2.Заголовочная строка с двумя столбцами: "Employee Name" и "Department".3.Две строки данных:"John", "HR""Sara", "Engineering"
