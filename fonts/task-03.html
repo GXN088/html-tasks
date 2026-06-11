@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Size Units</title>
+    <style>
+        /* Ваш CSS размещается здесь */
+        .parent {
+  font-size: 16px; /* Базовый размер шрифта для родительского элемента */
+}
+
+.pixels {
+  font-size: 18px;
+}
+
+.ems {
+  font-size: 1.5em; /* Будет равен 24px (1.5 * 16px) */
+}
+
+.percentage {
+  font-size: 90%; /* Будет равен 14.4px (0.9 * 16px) */
+}
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p class="pixels">This text is 18px</p>
+        <p class="ems">This text is 1.5em</p>
+        <p class="percentage">This text is 90%</p>
+    </div>
+</body>
+</html>
