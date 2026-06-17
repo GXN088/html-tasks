@@ -1,0 +1,52 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.welcome {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.welcome {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    color: #0056b3; /* Синий цвет для категорий */
+}
+
+.dish-name {
+    color: #e67e22; /* Оранжевый цвет для блюд */
+}
+
+/* Дополнительные стили для красивой структуры (по желанию) */
+body {
+    font-family: Arial, sans-serif; /* Более современный шрифт */
+    max-width: 600px;               /* Ограничение ширины меню */
+    margin: 20px auto;              /* Центрирование страницы */
+    padding: 0 20px;
+    background-color: #fcfcfc;      /* Мягкий светлый фон */
+}
+
+ul {
+    list-style-type: none;          /* Убирает маркеры-точки у списка */
+    padding-left: 0;                /* Убирает отступ слева у списка */
+}
+
+li {
+    margin-bottom: 8px;             /* Расстояние между блюдами */
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;                    /* Серый цвет для подвала */
+}
