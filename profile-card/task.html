@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Profile Card</title> 
+<style> 
+body { 
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+} 
+.header { 
+    width: 80%; 
+    margin: 10px; 
+    background-color: #e6f7ff; 
+    text-align: center; /* Центрируем текст заголовка */
+} 
+.content { 
+    width: 80%; 
+    margin: 10px; 
+    background-color: #f5f5f5; 
+    text-align: center; /* Центрируем текст контента */
+} 
+.footer { 
+    width: 80%; 
+    margin: 10px; 
+    background-color: #fff7e6; 
+    text-align: center; /* Центрируем текст подвала */
+} 
+.profile-card { 
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    display: flex; 
+    height: 400px; 
+    flex-direction: column; /* Располагаем секции вертикально */
+    justify-content: center; /* Центрируем блоки внутри карточки по вертикали */
+    align-items: center; /* Центрируем блоки внутри карточки по горизонтали */
+} 
+</style> 
+</head> 
+<body> 
+<div class="profile-card"> 
+<div class="header">Profile Header</div> 
+<div class="content">Main profile information goes here</div> 
+<div class="footer">Profile Footer</div> 
+</div> </body> 
+</html>
