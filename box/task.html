@@ -1,1 +1,56 @@
-Вам предоставлена разметка с четырьмя цветными квадратными блоками, расположенными в ряд. Ваша задача:1.Позиционируйте синий блок (box2) на 15px вниз и на 25px вправо с помощью относительного позиционирования (используйте свойства top и left).2.Позиционируйте зеленый блок (box3) на 10px вверх и на 20px влево с помощью относительного позиционирования (используйте свойства top и left).
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relative Positioning Challenge</title>
+    <style>
+        .container {
+            width: 600px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            color: white;
+        }
+        .box1 {
+            background-color: red;
+        }
+        .box2 {
+            background-color: blue;
+        }
+        .box3 {
+            background-color: green;
+        }
+        .box4 {
+            background-color: gold;
+        }
+        /* Write your CSS rules here */
+        .box2 {
+  position: relative;
+  top: 15px;
+  left: 25px;
+}
+
+.box3 {
+  position: relative;
+  top: -10px;
+  left: -20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>
