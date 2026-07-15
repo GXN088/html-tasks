@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navigation</title>
+    <style>
+        /* Базовые стили */
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block; /* Делает всю область ссылки кликабельной */
+        }
+
+        /* 1. Мобильные стили (экраны до 500px) */
+        @media (max-width: 500px) {
+            nav ul li {
+                display: block;
+            }
+            nav a {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+
+        /* 2. Стили для планшетов (экраны от 501px до 1024px) */
+        @media (min-width: 501px) and (max-width: 1024px) {
+            nav ul li {
+                display: inline-block;
+            }
+            nav a {
+                font-size: 16px;
+                padding: 10px 15px; /* Внутренние отступы для аккуратного вида */
+            }
+        }
+
+        /* Дополнительные базовые стили для десктопов (более 1024px) */
+        @media (min-width: 1025px) {
+            nav ul li {
+                display: inline-block;
+            }
+            nav a {
+                font-size: 16px;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Responsive Navigation Example</h1>
+    <p>Resize the browser window to see the navigation change.</p>
+</body>
+</html>
