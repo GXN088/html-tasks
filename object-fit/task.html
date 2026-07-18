@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <title>Responsive Image Gallery</title> 
+    <style> 
+        body { 
+            background-color: #f0f0f0; 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+        } 
+        
+        .gallery { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            padding: 20px; 
+        } 
+
+        /* 1. First image: max-width approach */
+        .img-responsive {
+            max-width: 100%;
+            height: 300px;
+            width: 100%;
+            object-fit: cover; /* Maintains aspect ratio */
+        }
+
+        /* 2. Second image: viewport width approach */
+        .img-viewport {
+            width: 30vw;
+            height: 300px;
+            object-fit: cover; /* Maintains aspect ratio */
+        }
+
+        /* 3. Third image: percentage width approach */
+        .img-percentage {
+            width: 40%;
+            height: 300px;
+            object-fit: cover; /* Maintains aspect ratio */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .img-viewport,
+            .img-percentage {
+                width: 100%;
+            }
+        }
+    </style> 
+</head> 
+<body> 
+
+    <div class="gallery"> 
+        <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Pinguino_de_Magallanes_en_PN_Islote_Lobos.jpg" alt="Responsive Image"> 
+        <img class="img-viewport" src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Penguins_near_Cape_Town%2C_South_Africa_%283154187952%29.jpg" alt="Viewport Image"> 
+        <img class="img-percentage" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Chinstrap_Penguin_%28Pygoscelis_antarctica%29_%282302883511%29.jpg" alt="Percentage Image"> 
+    </div> 
+
+</body> 
+</html>
