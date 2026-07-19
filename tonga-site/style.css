@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* ===== НАВИГАЦИОННОЕ МЕНЮ ===== */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a3a5c;
+    padding: 18px 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 25px;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+/* ===== ОТСТУП ДЛЯ КОНТЕНТА (чтобы не прятался под меню) ===== */
+body {
+    padding-top: 70px;
+}
+
+/* ===== ЗАГОЛОВОК ===== */
+.welcome h1 {
+    font-size: 42px;
+    color: #1a3a5c;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 20px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+/* ===== СЕКЦИЯ "ABOUT" ===== */
+.about {
+    background-color: #ffffff;
+    padding: 30px 20px 40px;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about h2 {
+    color: #1a3a5c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===== СЕКЦИЯ "CONTACT" ===== */
+.contact {
+    background-color: #ffffff;
+    padding: 25px 20px 35px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact h2 {
+    color: #1a3a5c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact table {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 17px;
+    line-height: 2;
+}
+
+.contact table td {
+    padding: 6px 20px;
+}
+
+.contact table td:first-child {
+    font-weight: bold;
+    color: #1a3a5c;
+}
+
+.contact table td:last-child {
+    color: #333;
+}
