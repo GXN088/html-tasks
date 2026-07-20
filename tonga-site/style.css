@@ -53,6 +53,10 @@ body {
     line-height: 1.6;
 }
 
+/*.welcome {
+    padding-top: 10vh;
+}
+*/
 /* ===== СЕКЦИЯ "ABOUT" ===== */
 .about {
     background-color: #ffffff;
