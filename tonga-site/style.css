@@ -125,3 +125,18 @@ body {
 .contact table td:last-child {
     color: #333;
 }
+
+@media (max-width: 400px) {
+    .menu {
+        padding: 10px;
+    }
+    img {
+        float: none;
+    }
+    .about img {
+        width: 80vw;
+    }
+    .contact {
+        height: auto;
+    }
+}
