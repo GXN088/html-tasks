@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allows the images to wrap into two rows */
+  gap: 20px; /* Space between the images */
+  justify-content: center; /* Centers the images */
+  margin-top: 20px;
+}
+.gallery img {
+  width: 200px;
+  height: 260px;
+}
+
+/* Правила CSS для фильтров */
+.blur img {
+  filter: blur(3px);
+}
+.brightness img {
+  filter: brightness(2.0);
+}
+.grayscale img {
+  filter: grayscale(100%);
+}
+.sepia img {
+  filter: sepia(70%);
+}
+</style>
+</head>
+<body>
+<h1>CSS Filters Gallery Challenge</h1>
+<div class="gallery">
+  <div class="blur">
+    <img src="https://wikimedia.org" alt="Blurred Image">
+  </div>
+  <div class="brightness">
+    <img src="https://wikimedia.org" alt="Brightened Image">
+  </div>
+  <div class="grayscale">
+    <img src="https://wikimedia.org" alt="Grayscale Image">
+  </div>
+  <div class="sepia">
+    <img src="https://wikimedia.org" alt="Sepia Image">
+  </div>
+</div>
+</body>
+</html>
