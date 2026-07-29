@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Allows the images to wrap into two rows */
+  gap: 20px;       /* Space between the images */
+  justify-content: center; /* Centers the images */
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 260px;
+}
+
+/* --- Ваши исправленные правила CSS --- */
+.img1:hover {
+  transform: scale(1.2);
+}
+
+.img2:hover {
+  transform: rotate(45deg);
+}
+
+.img3:hover {
+  transform: translate(-5px, -3px);
+}
+
+.img4:hover {
+  transform: skew(20deg, 10deg);
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Filters Gallery Challenge</h1>
+
+<div class="gallery">
+  <div class="img1">
+    <img src="https://wikimedia.org" alt="Blurred Image">
+  </div>
+  <div class="img2">
+    <img src="https://wikimedia.org 2C_Sn C3 A6fellsnes_peninsula 2C_Iceland 2C_20230505_1507_5224 jpg" alt="Brightened Image">
+  </div>
+  <div class="img3">
+    <img src="https://wikimedia.org" alt="Grayscale Image">
+  </div>
+  <div class="img4">
+    <img src="https://wikimedia.org" alt="Sepia Image">
+  </div>
+</div>
+
+</body>
+</html>
