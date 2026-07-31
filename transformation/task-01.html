@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Bliss</title>
+  <style>
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+      text-align: center; 
+    } 
+
+    /* Hero Section with Gradient */ 
+    .hero { 
+      padding: 80px 20px; 
+      color: #3e2723; 
+      /* Задание 1: Линейный градиент для фона секции hero */
+      background: linear-gradient(135deg, #ffecb3, #ffcc80);
+    } 
+
+    .hero h1 { 
+      font-size: 3rem; 
+      margin-bottom: 10px; 
+    } 
+
+    .hero p { 
+      font-size: 1.2rem; 
+      margin-bottom: 20px; 
+    } 
+
+    .cta-btn { 
+      background-color: #8d6e63; 
+      color: white; 
+      padding: 12px 24px; 
+      border-radius: 8px; 
+      font-size: 1rem; 
+      border: none;
+      cursor: pointer;
+      /* Задание 2: Плавный переход для анимации кнопки */
+      transition: transform 0.3s ease;
+    } 
+
+    /* Задание 2: Поворот кнопки при наведении */
+    .cta-btn:hover {
+      transform: rotate(-3deg);
+    }
+
+    /* Gallery section */ 
+    .gallery { 
+      padding: 50px 20px; 
+      background: #fffaf0; 
+      overflow: hidden; /* Скрывает выход картинки за границы при увеличении */
+    } 
+
+    .gallery h2 { 
+      margin-bottom: 20px; 
+      font-size: 2rem; 
+      color: #4e342e; 
+    } 
+
+    .coffee-img { 
+      max-width: 300px; 
+      border-radius: 12px; 
+      /* Задание 3: Эффект сепии в обычном состоянии */
+      filter: sepia(60%);
+      /* Добавлено: Плавный переход для фильтра и масштабирования */
+      transition: transform 0.4s ease, filter 0.4s ease;
+    } 
+
+    /* Задание 4: Изменение фильтра и масштаба картинки при наведении */
+    .coffee-img:hover {
+      filter: sepia(0%);
+      transform: scale(1.1);
+    }
+  </style> 
+</head> 
+<body> 
+  <header class="hero"> 
+    <h1>Welcome to Coffee Bliss</h1> 
+    <p>Your daily dose of joy in a cup</p> 
+    <button class="cta-btn">Order Now</button> 
+  </header> 
+  <section class="gallery"> 
+    <h2>Our Signature Blend</h2> 
+    <img src="https://unsplash.com" alt="Cup of Coffee" class="coffee-img" /> 
+  </section> 
+</body> 
+</html>
