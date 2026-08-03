@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #afe1e3;
+            grid-area: header;
+        }
+        
+        /* Код CSS Grid */
+        .container {
+            display: grid;
+            gap: 10px; /* Отступ между элементами */
+            grid-template-columns: repeat(3, 1fr); /* 3 равных столбца */
+            grid-template-rows: auto auto; /* 2 строки */
+            grid-template-areas: 
+                "header header header"
+                "img1 img2 img3";
+        }
+
+        /* Назначение областей для каждого класса */
+        .img1 { 
+            grid-area: img1; 
+        }
+        .img2 { 
+            grid-area: img2; 
+        }
+        .img3 { 
+            grid-area: img3; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">My Gallery</div>
+        <div class="img1"><img src="https://wikimedia.org"></div>
+        <div class="img2"><img src="https://wikimedia.org"></div>
+        <div class="img3"><img src="https://wikimedia.org"></div>
+    </div>
+</body>
+</html>
