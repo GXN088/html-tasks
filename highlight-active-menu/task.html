@@ -1,0 +1,30 @@
+<html> 
+<head> 
+    <title>Highlight Active Menu</title> 
+    <style> 
+        nav a { 
+            padding: 10px; 
+            text-decoration: none; 
+            color: black; 
+        } 
+        
+        /* 1. Изменение цвета фона при наведении курсора */
+        nav a:hover {
+            background-color: #32a852;
+        }
+
+        /* 2. Изменение цвета текста при активном нажатии */
+        nav a:active {
+            color: white;
+        }
+    </style> 
+</head> 
+<body> 
+    <nav> 
+        <a href="#">Home</a> 
+        <a href="#">About</a> 
+        <a href="#" class="active">Blog</a> 
+        <a href="#">Contact</a> 
+    </nav> 
+</body> 
+</html>
