@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>What “mobile-first” means</title>
+  <style>
+    /* 1. Сначала стили для мобильных устройств */
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      margin-bottom: 10px; /* Отступ между кнопками по вертикали */
+    }
+
+    .menu a {
+      display: block; /* Ссылки занимают всю ширину */
+      padding: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #ffcc4d; /* Желтый цвет из примера */
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    /* 2. Стили для больших экранов */
+    @media (min-width: 768px) {
+      .menu {
+        display: flex; /* Макет становится горизонтальным */
+      }
+
+      .menu li {
+        margin-bottom: 0;   /* Сбрасываем мобильный вертикальный отступ */
+        margin-right: 10px; /* Задаем горизонтальный отступ через margin */
+      }
+
+      /* Обнуляем отступ у самого последнего элемента (свойство margin-right станет 0px) */
+      .menu li:last-child {
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
