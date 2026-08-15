@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile-First Navigation</title>
+  <style>
+    :root {
+      --primary-color: #4a6de5;
+      --text-color: #333333;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* Позволяет меню переноситься на новую строку на мобильных */
+    }
+
+    .logo {
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+      display: block;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    .nav-list {
+      display: none; /* 1. Скрыто по умолчанию на мобильных экранах */
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+      width: 100%;
+    }
+
+    .nav-list li a {
+      color: var(--text-color);
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 0;
+    }
+
+    @media (min-width: 768px) {
+      .menu-toggle {
+        display: none; /* Скрываем кнопку меню на больших экранах */
+      }
+
+      .nav-list {
+        display: flex; /* 2. Показываем список в линию на больших экранах */
+        margin: 0;
+        width: auto;
+      }
+
+      .nav-list li {
+        margin: 0 0 0 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="#" class="logo">MySite</a>
+      <button class="menu-toggle">Menu</button>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+</body>
+</html>
