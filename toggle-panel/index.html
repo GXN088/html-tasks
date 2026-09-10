@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>FAQ Coffee Lovers</h1>
+
+    <button class="accordion" onclick="togglePanel('q1')">What is the best way to brew coffee at home?</button>
+    <div id="q1" class="panel">
+        The French press and pour-over methods are popular for making rich, flavorful coffee at home.
+    </div>
+
+    <button class="accordion" onclick="togglePanel('q2')">Where do coffee beans come from?</button>
+    <div id="q2" class="panel">
+        Most coffee beans are grown in countries around the equator, such as Brazil, Ethiopia, and Colombia.
+    </div>
+
+    <button class="accordion" onclick="togglePanel('q3')">How late can I drink coffee?</button>
+    <div id="q3" class="panel">
+        It's best to avoid coffee 6 hours before bedtime, since caffeine can affect your sleep.
+    </div>
+
+    <!-- Шаг 1 и 2: Новый вопрос -->
+    <button class="accordion" onclick="togglePanel('q4')">Should I add milk or drink it black?</button>
+    
+    <!-- Шаг 3 и 4: Новый ответ -->
+    <div id="q4" class="panel">
+        It depends on your taste! Black coffee has stronger flavor, while milk softens the bitterness.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
