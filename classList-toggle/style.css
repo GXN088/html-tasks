@@ -1,0 +1,68 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 40px;
+    }
+
+h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+.faq {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+.faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+.faq-question {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+.faq-question:hover {
+      color: #00796b;
+    }
+
+.faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      line-height: 1.6;
+      margin-top: 5px;
+    }
+
+/* Плавный переход для ответов */
+.faq-answer {
+  /* Важно добавить transition, чтобы max-height и opacity менялись плавно */
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin 0.3s ease;
+}
+
+/* Стили, когда у ответа есть класс .show */
+.faq-answer.show {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 15px; /* Немного увеличим отступ для красоты */
+}
+
+/* Анимация для знака + */
+.faq-question span:last-child {
+  transition: transform 0.3s ease;
+  font-size: 1.3em;
+}
+
+/* Поворачиваем плюс на 45 градусов при активации, превращая в х */
+.faq-question.active span:last-child {
+  transform: rotate(45deg);
+}
